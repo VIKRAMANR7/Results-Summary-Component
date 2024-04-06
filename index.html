@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Results Summary Component</title>
+  </head>
+  <body
+    class="font-Hanken-Grotesk bg-pale-blue-alpha min-h-screen flex flex-row justify-center items-center"
+  >
+    <div class="flex bg-white rounded-r-[16px] mobile:flex-col">
+      <section
+        class="bg-[linear-gradient(hsl(252_,100%_,67%),_50%,_hsl(241_,81%_,54%))] w-[375px] px-[30px] pt-[35px] pb-[50px] rounded-[25px] text-center font-[500]"
+      >
+        <p class="text-light-lavendar text-2xl pb-[30px]">Your Result</p>
+        <div
+          class="w-[180px] h-[180px] rounded-full m-auto bg-[linear-gradient(hsla(256_,72%_,46%_,1),_50%,_hsla(241_,72%_,46%_,0))] flex justify-center items-center mb-[15px]"
+        >
+          <h1 class="text-[72px] font-bold text-white">
+            76<span class="block text-[15px] mt-[-1rem] text-light-lavendar"
+              >of 100</span
+            >
+          </h1>
+        </div>
+
+        <strong class="text-3xl font-[500] text-white">Great</strong>
+        <p
+          class="text-[16px] leading-[20px] text-light-lavendar mt-[15px] mx-[40px] mobile:mx-[20px]"
+        >
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <section class="w-[375px] p-[40px]">
+        <h2 class="text-dark-gray-blue text-2xl font-bold pb-[20px]">
+          Summary
+        </h2>
+        <div class="flex flex-col gap-[15px]">
+          <div class="marksBox bg-light-red-alpha">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction" />
+            <h3 class="text-light-red marksHeading">Reaction</h3>
+            <p class="marks">80<span class="totalMarks"> / 100</span></p>
+          </div>
+          <div class="marksBox bg-orange-yellow-alpha">
+            <img src="./assets/images/icon-memory.svg" alt="memory" />
+            <h3 class="text-orange-yellow marksHeading">Memory</h3>
+            <p class="marks">92<span class="totalMarks"> / 100</span></p>
+          </div>
+          <div class="marksBox bg-green-teal-alpha">
+            <img src="./assets/images/icon-verbal.svg" alt="verbal" />
+            <h3 class="text-green-teal marksHeading">Verbal</h3>
+            <p class="marks">61<span class="totalMarks"> / 100</span></p>
+          </div>
+          <div class="marksBox bg-cobalt-blue-alpha">
+            <img src="./assets/images/icon-visual.svg" alt="visual" />
+            <h3 class="text-cobalt-blue marksHeading">Visual</h3>
+            <p class="marks">72<span class="totalMarks"> / 100</span></p>
+          </div>
+          <button
+            class="w-full mt-[20px] bg-dark-gray-blue text-white py-[10px] text-[18px] rounded-[20px] hover:bg-[linear-gradient(hsl(252_,100%_,67%),_50%,_hsl(241_,81%_,54%))]"
+          >
+            Continue
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

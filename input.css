@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@layer components {
+  .marksBox {
+    @apply flex items-center px-[15px] py-[10px] rounded-md;
+  }
+  .marks {
+    @apply text-dark-gray-blue text-[18px] font-bold ml-auto;
+  }
+  .totalMarks {
+    @apply text-dark-gray-blue-alpha font-bold;
+  }
+  .marksHeading {
+    @apply text-[18px] font-[600] pl-[10px];
+  }
+}
